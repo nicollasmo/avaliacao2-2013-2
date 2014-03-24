@@ -16,6 +16,6 @@
     />   
     <Realm className="org.apache.catalina.realm.MemoryRealm"
                name="provarealm"
-               pathname = "avaliacao2-2013-2/WEB-INF/auth/usuarios.xml"
+               pathname = "/WEB-INF/auth/usuarios.xml"
     />   
 </Context>
