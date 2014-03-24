@@ -16,7 +16,19 @@
     </ui:define>
 
     <ui:define name="content">
-
+        <form method="POST" action="j_security_check">
+            <div style="margin: 1em 0">
+                <div style="margin: 0.5em 0">
+                    <label for="usuarioInput" style="display: inline-block; width: 45px">Usuário</label>
+                    <input id="usuarioInput"  type="text" name="j_username"/>
+                </div>
+                <div style="margin: 0.5em 0">
+                    <label for="senhaInput" style="display: inline-block; width: 45px">Senha</label>
+                    <input id="senhaInput" type="password" name="j_password"/>
+                </div>
+            </div>
+            <input type="submit"  value="Entrar" style="width: 120px"/>
+        </form>
     </ui:define>
 
 </ui:composition>

@@ -23,7 +23,8 @@
                     <td id="top">
                         <ui:insert name="top">
                             <a href="http://www.ct.utfpr.edu.br" target="_blank"><img src="imagens/header.jpg" alt=""/></a>
-                            <div>Usuário: admin</div>
+                            <div>Usuário: <h:outputText value="Usuário: ${facesContext.externalContext.userPrincipal.name}"
+                                                        rendered="${!empty facesContext.externalContext.userPrincipal}"/></div>
                         </ui:insert>
                     </td>
                     <td class="right_filler"/>

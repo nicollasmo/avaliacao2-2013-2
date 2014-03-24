@@ -1,3 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context antiJARLocking="true" path="/avaliacao2">
+    <Resource 
+        auth="Container" 
+        driverClassName="org.postgresql.Driver" 
+        logAbandoned="true" 
+        maxActive="5" 
+        maxIdle="3" 
+        maxWait="10000" 
+        name="jdbc/provadatasource" 
+        username="aluno02"
+        password="aluno02" 
+        removeAbandoned="true" 
+        type="javax.sql.DataSource" 
+        url="jdbc:postgresql://dev.ct.utfpr.edu.br:5432/aluno02" 
+    />   
+    <Realm className="org.apache.catalina.realm.MemoryRealm"
+               name="provarealm"
+               pathname = "avaliacao2-2013-2/WEB-INF/auth/usuarios.xml"
+    />   
 </Context>
